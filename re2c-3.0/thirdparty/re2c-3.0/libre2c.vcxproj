@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{13C48415-8CEE-370F-8863-FE307DE80757}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>libre2c</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)lib\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)..\Temp\$(SolutionName)\$(ProjectName)\$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)lib\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)..\Temp\$(SolutionName)\$(ProjectName)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>include</AdditionalIncludeDirectories>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;RE2C_STDLIB_DIR=".";RE2C_DEBUG</PreprocessorDefinitions>
+    </ClCompile>
+    
+    
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>include</AdditionalIncludeDirectories>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;RE2C_STDLIB_DIR="."</PreprocessorDefinitions>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    
+    
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="include\adfa\adfa.h" />
+    <ClInclude Include="include\cfg\cfg.h" />
+    <ClInclude Include="include\codegen\code.h" />
+    <ClInclude Include="include\codegen\helpers.h" />
+    <ClInclude Include="include\compile.h" />
+    <ClInclude Include="include\constants.h" />
+    <ClInclude Include="include\debug\debug.h" />
+    <ClInclude Include="include\dfa\closure_leftmost.h" />
+    <ClInclude Include="include\dfa\closure_posix.h" />
+    <ClInclude Include="include\dfa\determinization.h" />
+    <ClInclude Include="include\dfa\dfa.h" />
+    <ClInclude Include="include\dfa\posix_precedence.h" />
+    <ClInclude Include="include\dfa\stacmd.h" />
+    <ClInclude Include="include\dfa\tagver_table.h" />
+    <ClInclude Include="include\dfa\tag_history.h" />
+    <ClInclude Include="include\dfa\tcmd.h" />
+    <ClInclude Include="include\encoding\case.h" />
+    <ClInclude Include="include\encoding\ebcdic\ebcdic.h" />
+    <ClInclude Include="include\encoding\ebcdic\ebcdic_regexp.h" />
+    <ClInclude Include="include\encoding\enc.h" />
+    <ClInclude Include="include\encoding\range_suffix.h" />
+    <ClInclude Include="include\encoding\utf16\utf16.h" />
+    <ClInclude Include="include\encoding\utf16\utf16_regexp.h" />
+    <ClInclude Include="include\encoding\utf8\utf8.h" />
+    <ClInclude Include="include\encoding\utf8\utf8_regexp.h" />
+    <ClInclude Include="include\lex.h" />
+    <ClInclude Include="include\msg\location.h" />
+    <ClInclude Include="include\msg\msg.h" />
+    <ClInclude Include="include\msg\ver_to_vernum.h" />
+    <ClInclude Include="include\msg\warn.h" />
+    <ClInclude Include="include\nfa\nfa.h" />
+    <ClInclude Include="include\options\opt.h" />
+    <ClInclude Include="include\options\symtab.h" />
+    <ClInclude Include="include\parse\ast.h" />
+    <ClInclude Include="include\parse\input.h" />
+    <ClInclude Include="include\parse\parse.h" />
+    <ClInclude Include="include\parse\parser_.h" />
+    <ClInclude Include="include\parse\scanner.h" />
+    <ClInclude Include="include\parse\unescape.h" />
+    <ClInclude Include="include\regcomp_dfa_regless.h" />
+    <ClInclude Include="include\regex.h" />
+    <ClInclude Include="include\regexp\re.h" />
+    <ClInclude Include="include\regexp\rule.h" />
+    <ClInclude Include="include\regexp\tag.h" />
+    <ClInclude Include="include\regex_impl.h" />
+    <ClInclude Include="include\regoff_trie.h" />
+    <ClInclude Include="include\skeleton\mtag_trie.h" />
+    <ClInclude Include="include\skeleton\path.h" />
+    <ClInclude Include="include\skeleton\skeleton.h" />
+    <ClInclude Include="include\test\range\test-impl.h" />
+    <ClInclude Include="include\test\range\test.h" />
+    <ClInclude Include="include\test_helper.h" />
+    <ClInclude Include="include\util\allocate.h" />
+    <ClInclude Include="include\util\attribute.h" />
+    <ClInclude Include="include\util\c99_stdint.h" />
+    <ClInclude Include="include\util\file_utils.h" />
+    <ClInclude Include="include\util\fixed_allocator.h" />
+    <ClInclude Include="include\util\forbid_copy.h" />
+    <ClInclude Include="include\util\free_list.h" />
+    <ClInclude Include="include\util\hash32.h" />
+    <ClInclude Include="include\util\local_increment.h" />
+    <ClInclude Include="include\util\lookup.h" />
+    <ClInclude Include="include\util\range.h" />
+    <ClInclude Include="include\util\slab_allocator.h" />
+    <ClInclude Include="include\util\smart_ptr.h" />
+    <ClInclude Include="include\util\static_assert.h" />
+    <ClInclude Include="include\util\string_utils.h" />
+    <ClInclude Include="include\util\s_to_n32_unsafe.h" />
+    <ClInclude Include="include\util\temp_file.h" />
+    <ClInclude Include="include\util\u32lim.h" />
+    <ClInclude Include="include\util\uniq_vector.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\adfa\adfa.cc" />
+    <ClCompile Include="src\cfg\cfg.cc" />
+    <ClCompile Include="src\cfg\compact.cc" />
+    <ClCompile Include="src\cfg\dce.cc" />
+    <ClCompile Include="src\cfg\freeze.cc" />
+    <ClCompile Include="src\cfg\interfere.cc" />
+    <ClCompile Include="src\cfg\liveanal.cc" />
+    <ClCompile Include="src\cfg\normalize.cc" />
+    <ClCompile Include="src\cfg\optimize.cc" />
+    <ClCompile Include="src\cfg\rename.cc" />
+    <ClCompile Include="src\cfg\varalloc.cc" />
+    <ClCompile Include="src\codegen\code_goto.cc" />
+    <ClCompile Include="src\codegen\combine.cc" />
+    <ClCompile Include="src\codegen\gen_bitmaps.cc" />
+    <ClCompile Include="src\codegen\gen_delayed.cc" />
+    <ClCompile Include="src\codegen\gen_dfa.cc" />
+    <ClCompile Include="src\codegen\gen_goto.cc" />
+    <ClCompile Include="src\codegen\gen_program.cc" />
+    <ClCompile Include="src\codegen\gen_state.cc" />
+    <ClCompile Include="src\codegen\helpers.cc" />
+    <ClCompile Include="src\codegen\remove_empty.cc" />
+    <ClCompile Include="src\codegen\render.cc" />
+    <ClCompile Include="src\compile.cc" />
+    <ClCompile Include="src\debug\dump_adfa.cc" />
+    <ClCompile Include="src\debug\dump_cfg.cc" />
+    <ClCompile Include="src\debug\dump_dfa.cc" />
+    <ClCompile Include="src\debug\dump_dfa_tree.cc" />
+    <ClCompile Include="src\debug\dump_interf.cc" />
+    <ClCompile Include="src\debug\dump_nfa.cc" />
+    <ClCompile Include="src\dfa\closure.cc" />
+    <ClCompile Include="src\dfa\dead_rules.cc" />
+    <ClCompile Include="src\dfa\determinization.cc" />
+    <ClCompile Include="src\dfa\fallback_tags.cc" />
+    <ClCompile Include="src\dfa\fillpoints.cc" />
+    <ClCompile Include="src\dfa\find_state.cc" />
+    <ClCompile Include="src\dfa\minimization.cc" />
+    <ClCompile Include="src\dfa\stacmd.cc" />
+    <ClCompile Include="src\dfa\tagver_table.cc" />
+    <ClCompile Include="src\dfa\tcmd.cc" />
+    <ClCompile Include="src\encoding\ebcdic\ebcdic_regexp.cc" />
+    <ClCompile Include="src\encoding\enc.cc" />
+    <ClCompile Include="src\encoding\range_suffix.cc" />
+    <ClCompile Include="src\encoding\utf16\utf16.cc" />
+    <ClCompile Include="src\encoding\utf16\utf16_regexp.cc" />
+    <ClCompile Include="src\encoding\utf8\utf8.cc" />
+    <ClCompile Include="src\encoding\utf8\utf8_regexp.cc" />
+    <ClCompile Include="src\lex_.cc" />
+    <ClCompile Include="src\msg\help.cc" />
+    <ClCompile Include="src\msg\msg.cc" />
+    <ClCompile Include="src\msg\ver_to_vernum.cc" />
+    <ClCompile Include="src\msg\warn.cc" />
+    <ClCompile Include="src\nfa\estimate_size.cc" />
+    <ClCompile Include="src\nfa\re_to_nfa.cc" />
+    <ClCompile Include="src\options\opt.cc" />
+    <ClCompile Include="src\options\parse_opts.cc" />
+    <ClCompile Include="src\options\symtab.cc" />
+    <ClCompile Include="src\parse\input.cc" />
+    <ClCompile Include="src\parse\lex.cc" />
+    <ClCompile Include="src\parse\lex_conf.cc" />
+    <ClCompile Include="src\parse\parse.cc" />
+    <ClCompile Include="src\parse\parser.cc" />
+    <ClCompile Include="src\parse\scanner.cc" />
+    <ClCompile Include="src\parse\unescape.cc" />
+    <ClCompile Include="src\parse_.cc" />
+    <ClCompile Include="src\regcomp.cc" />
+    <ClCompile Include="src\regexec.cc" />
+    <ClCompile Include="src\regexec_dfa.cc" />
+    <ClCompile Include="src\regexec_dfa_regless.cc" />
+    <ClCompile Include="src\regexec_nfa_leftmost.cc" />
+    <ClCompile Include="src\regexec_nfa_leftmost_trie.cc" />
+    <ClCompile Include="src\regexec_nfa_posix.cc" />
+    <ClCompile Include="src\regexec_nfa_posix_trie.cc" />
+    <ClCompile Include="src\regexec_nfa_posix_backward.cc" />
+    <ClCompile Include="src\regexec_nfa_posix_kuklewicz.cc" />
+    <ClCompile Include="src\regexp\ast_to_re.cc" />
+    <ClCompile Include="src\regexp\default_tags.cc" />
+    <ClCompile Include="src\regexp\fixed_tags.cc" />
+    <ClCompile Include="src\regexp\nullable.cc" />
+    <ClCompile Include="src\regexp\re.cc" />
+    <ClCompile Include="src\regexp\rule.cc" />
+    <ClCompile Include="src\regexp\split_charset.cc" />
+    <ClCompile Include="src\regexp\tag.cc" />
+    <ClCompile Include="src\regfree.cc" />
+    <ClCompile Include="src\skeleton\control_flow.cc" />
+    <ClCompile Include="src\skeleton\generate_code.cc" />
+    <ClCompile Include="src\skeleton\generate_data.cc" />
+    <ClCompile Include="src\skeleton\maxpath.cc" />
+    <ClCompile Include="src\skeleton\skeleton.cc" />
+    <ClCompile Include="src\stubs.cc" />
+    <ClCompile Include="src\parse\ast.cc" />
+    <ClCompile Include="src\test_helper.cc" />
+    <ClCompile Include="src\util\file_utils.cc" />
+    <ClCompile Include="src\util\range.cc" />
+    <ClCompile Include="src\util\s_to_n32_unsafe.cc" />
+    <ClCompile Include="src\util\temp_file.cc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

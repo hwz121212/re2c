@@ -1,0 +1,615 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="src\regcomp.cc">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\regexec.cc">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\regexec_dfa.cc">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\regexec_dfa_regless.cc">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\regexec_nfa_leftmost.cc">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\regexec_nfa_leftmost_trie.cc">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\regexec_nfa_posix.cc">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\regexec_nfa_posix_trie.cc">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\regexec_nfa_posix_backward.cc">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\regexec_nfa_posix_kuklewicz.cc">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\regfree.cc">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\stubs.cc">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\adfa\adfa.cc">
+      <Filter>src\adfa</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cfg\cfg.cc">
+      <Filter>src\cfg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cfg\compact.cc">
+      <Filter>src\cfg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cfg\dce.cc">
+      <Filter>src\cfg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cfg\freeze.cc">
+      <Filter>src\cfg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cfg\interfere.cc">
+      <Filter>src\cfg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cfg\liveanal.cc">
+      <Filter>src\cfg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cfg\normalize.cc">
+      <Filter>src\cfg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cfg\optimize.cc">
+      <Filter>src\cfg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cfg\rename.cc">
+      <Filter>src\cfg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cfg\varalloc.cc">
+      <Filter>src\cfg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\codegen\code_goto.cc">
+      <Filter>src\codegen</Filter>
+    </ClCompile>
+    <ClCompile Include="src\codegen\combine.cc">
+      <Filter>src\codegen</Filter>
+    </ClCompile>
+    <ClCompile Include="src\codegen\gen_bitmaps.cc">
+      <Filter>src\codegen</Filter>
+    </ClCompile>
+    <ClCompile Include="src\codegen\gen_delayed.cc">
+      <Filter>src\codegen</Filter>
+    </ClCompile>
+    <ClCompile Include="src\codegen\gen_dfa.cc">
+      <Filter>src\codegen</Filter>
+    </ClCompile>
+    <ClCompile Include="src\codegen\gen_goto.cc">
+      <Filter>src\codegen</Filter>
+    </ClCompile>
+    <ClCompile Include="src\codegen\gen_program.cc">
+      <Filter>src\codegen</Filter>
+    </ClCompile>
+    <ClCompile Include="src\codegen\gen_state.cc">
+      <Filter>src\codegen</Filter>
+    </ClCompile>
+    <ClCompile Include="src\codegen\helpers.cc">
+      <Filter>src\codegen</Filter>
+    </ClCompile>
+    <ClCompile Include="src\codegen\remove_empty.cc">
+      <Filter>src\codegen</Filter>
+    </ClCompile>
+    <ClCompile Include="src\codegen\render.cc">
+      <Filter>src\codegen</Filter>
+    </ClCompile>
+    <ClCompile Include="src\debug\dump_adfa.cc">
+      <Filter>src\debug</Filter>
+    </ClCompile>
+    <ClCompile Include="src\debug\dump_cfg.cc">
+      <Filter>src\debug</Filter>
+    </ClCompile>
+    <ClCompile Include="src\debug\dump_dfa.cc">
+      <Filter>src\debug</Filter>
+    </ClCompile>
+    <ClCompile Include="src\debug\dump_dfa_tree.cc">
+      <Filter>src\debug</Filter>
+    </ClCompile>
+    <ClCompile Include="src\debug\dump_interf.cc">
+      <Filter>src\debug</Filter>
+    </ClCompile>
+    <ClCompile Include="src\debug\dump_nfa.cc">
+      <Filter>src\debug</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dfa\closure.cc">
+      <Filter>src\dfa</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dfa\dead_rules.cc">
+      <Filter>src\dfa</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dfa\determinization.cc">
+      <Filter>src\dfa</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dfa\fallback_tags.cc">
+      <Filter>src\dfa</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dfa\fillpoints.cc">
+      <Filter>src\dfa</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dfa\find_state.cc">
+      <Filter>src\dfa</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dfa\minimization.cc">
+      <Filter>src\dfa</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dfa\stacmd.cc">
+      <Filter>src\dfa</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dfa\tagver_table.cc">
+      <Filter>src\dfa</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dfa\tcmd.cc">
+      <Filter>src\dfa</Filter>
+    </ClCompile>
+    <ClCompile Include="src\encoding\ebcdic\ebcdic_regexp.cc">
+      <Filter>src\encoding\ebcdic</Filter>
+    </ClCompile>
+    <ClCompile Include="src\encoding\utf8\utf8.cc">
+      <Filter>src\encoding\utf8</Filter>
+    </ClCompile>
+    <ClCompile Include="src\encoding\utf8\utf8_regexp.cc">
+      <Filter>src\encoding\utf8</Filter>
+    </ClCompile>
+    <ClCompile Include="src\encoding\utf16\utf16.cc">
+      <Filter>src\encoding\utf16</Filter>
+    </ClCompile>
+    <ClCompile Include="src\encoding\utf16\utf16_regexp.cc">
+      <Filter>src\encoding\utf16</Filter>
+    </ClCompile>
+    <ClCompile Include="src\encoding\enc.cc">
+      <Filter>src\encoding</Filter>
+    </ClCompile>
+    <ClCompile Include="src\encoding\range_suffix.cc">
+      <Filter>src\encoding</Filter>
+    </ClCompile>
+    <ClCompile Include="src\msg\msg.cc">
+      <Filter>src\msg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\msg\warn.cc">
+      <Filter>src\msg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\nfa\estimate_size.cc">
+      <Filter>src\nfa</Filter>
+    </ClCompile>
+    <ClCompile Include="src\nfa\re_to_nfa.cc">
+      <Filter>src\nfa</Filter>
+    </ClCompile>
+    <ClCompile Include="src\options\opt.cc">
+      <Filter>src\options</Filter>
+    </ClCompile>
+    <ClCompile Include="src\options\symtab.cc">
+      <Filter>src\options</Filter>
+    </ClCompile>
+    <ClCompile Include="src\parse\input.cc">
+      <Filter>src\parse</Filter>
+    </ClCompile>
+    <ClCompile Include="src\parse\lex_conf.cc">
+      <Filter>src\parse</Filter>
+    </ClCompile>
+    <ClCompile Include="src\parse\parse.cc">
+      <Filter>src\parse</Filter>
+    </ClCompile>
+    <ClCompile Include="src\parse\scanner.cc">
+      <Filter>src\parse</Filter>
+    </ClCompile>
+    <ClCompile Include="src\regexp\ast_to_re.cc">
+      <Filter>src\regexp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\regexp\default_tags.cc">
+      <Filter>src\regexp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\regexp\fixed_tags.cc">
+      <Filter>src\regexp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\regexp\nullable.cc">
+      <Filter>src\regexp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\regexp\re.cc">
+      <Filter>src\regexp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\regexp\rule.cc">
+      <Filter>src\regexp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\regexp\split_charset.cc">
+      <Filter>src\regexp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\regexp\tag.cc">
+      <Filter>src\regexp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\skeleton\control_flow.cc">
+      <Filter>src\skeleton</Filter>
+    </ClCompile>
+    <ClCompile Include="src\skeleton\generate_code.cc">
+      <Filter>src\skeleton</Filter>
+    </ClCompile>
+    <ClCompile Include="src\skeleton\generate_data.cc">
+      <Filter>src\skeleton</Filter>
+    </ClCompile>
+    <ClCompile Include="src\skeleton\maxpath.cc">
+      <Filter>src\skeleton</Filter>
+    </ClCompile>
+    <ClCompile Include="src\skeleton\skeleton.cc">
+      <Filter>src\skeleton</Filter>
+    </ClCompile>
+    <ClCompile Include="src\util\file_utils.cc">
+      <Filter>src\util</Filter>
+    </ClCompile>
+    <ClCompile Include="src\util\temp_file.cc">
+      <Filter>src\util</Filter>
+    </ClCompile>
+    <ClCompile Include="src\util\range.cc">
+      <Filter>src\util</Filter>
+    </ClCompile>
+    <ClCompile Include="src\util\s_to_n32_unsafe.cc">
+      <Filter>src\util</Filter>
+    </ClCompile>
+    <ClCompile Include="src\parse\unescape.cc">
+      <Filter>src\parse</Filter>
+    </ClCompile>
+    <ClCompile Include="src\parse\ast.cc">
+      <Filter>src\parse</Filter>
+    </ClCompile>
+    <ClCompile Include="src\msg\ver_to_vernum.cc">
+      <Filter>src\msg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\options\parse_opts.cc">
+      <Filter>src\options</Filter>
+    </ClCompile>
+    <ClCompile Include="src\msg\help.cc">
+      <Filter>src\msg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\parse\lex.cc">
+      <Filter>src\parse</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lex_.cc">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\compile.cc">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\parse\parser.cc">
+      <Filter>src\parse</Filter>
+    </ClCompile>
+    <ClCompile Include="src\test_helper.cc">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\parse_.cc">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{533afaf8-29e9-4b9a-a2bf-7cb8361f2c36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{CD158FD2-1B86-388E-AB51-EC98AEA5367B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\adfa">
+      <UniqueIdentifier>{24c989ac-8b66-4c31-b377-96c9d7890fca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\cfg">
+      <UniqueIdentifier>{8702be68-dc8c-44ee-b20e-260684fd4dfd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\codegen">
+      <UniqueIdentifier>{19dc3ebd-34d2-41a0-a8da-038e4efcca3b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\debug">
+      <UniqueIdentifier>{650c6286-7ac0-4c79-be5e-d24a9f4d3e33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\dfa">
+      <UniqueIdentifier>{5bc12708-399b-4b1e-9f72-c07d79e99833}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\encoding">
+      <UniqueIdentifier>{83909360-58df-41a1-91f9-80195b6387ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\msg">
+      <UniqueIdentifier>{0ba5cdb4-1332-4441-be5f-4c7590b981b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\nfa">
+      <UniqueIdentifier>{284ea381-d4a8-4741-8c0c-685a5611a7c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\options">
+      <UniqueIdentifier>{5844b69e-f7d3-4232-8518-27336407bb1b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\parse">
+      <UniqueIdentifier>{daa1b0da-adb7-41f3-9ff3-5ece51c92011}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\regexp">
+      <UniqueIdentifier>{13a95ae6-c756-493d-aea1-c967644cd0e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\skeleton">
+      <UniqueIdentifier>{2e3a3255-f785-451f-ba03-369eb4c69c12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\test">
+      <UniqueIdentifier>{3b2ab813-ed4d-4ffd-aba1-20e4151a5f13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\util">
+      <UniqueIdentifier>{4b5c2133-111e-407b-b4e8-defbd3977f64}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\encoding\ebcdic">
+      <UniqueIdentifier>{a7a8095b-f6d0-495b-b443-d25fbf9fb572}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\encoding\utf8">
+      <UniqueIdentifier>{bdbd912f-5031-44c5-8100-a3c10a43f12b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\encoding\utf16">
+      <UniqueIdentifier>{6f4c7cba-09f3-4361-9304-2e3c2542abd9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\test\range">
+      <UniqueIdentifier>{13fef080-87b5-489f-bb7d-07cde9416f56}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\adfa">
+      <UniqueIdentifier>{38f0931e-6cd0-40a9-aeb6-97117d4f188c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\cfg">
+      <UniqueIdentifier>{8386afc6-e90a-4af4-824c-6b5dd680e7a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\codegen">
+      <UniqueIdentifier>{c71e0dab-a85a-406f-a2f7-8a273ed27da9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\debug">
+      <UniqueIdentifier>{231dbc06-826b-4ae9-8cf4-d6e211d3cf4f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\dfa">
+      <UniqueIdentifier>{7834ad2d-5c3a-4576-8333-f380ac5b58c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\encoding">
+      <UniqueIdentifier>{039b7279-e21f-4f8f-82f2-f2a8f7346b7d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\encoding\ebcdic">
+      <UniqueIdentifier>{1886d36c-45be-4d80-9232-17c0644d8ffe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\encoding\utf8">
+      <UniqueIdentifier>{b0e350d2-b43e-4840-a664-e576773d58b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\encoding\utf16">
+      <UniqueIdentifier>{5ba4ae9c-0b3e-4c8e-88db-81e58eae628b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\msg">
+      <UniqueIdentifier>{f5a8ffa9-ce73-4ae5-b56e-c97875cd8ebb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\nfa">
+      <UniqueIdentifier>{c5242b2b-83d6-44ab-a617-678e5929cd7f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\options">
+      <UniqueIdentifier>{0888bf91-60a8-4b15-87f9-733018f01fc6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\parse">
+      <UniqueIdentifier>{4f070c57-56ff-4187-a0d3-52318f25a824}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\regexp">
+      <UniqueIdentifier>{c50f6dbd-3dbe-415b-aa59-41783ac51f4c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\skeleton">
+      <UniqueIdentifier>{2781827e-5ac6-415c-8da4-d7ac2893d0de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\util">
+      <UniqueIdentifier>{32c4e192-4009-40ca-88ac-5e5d3a7de967}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\compile.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\constants.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\lex.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\regcomp_dfa_regless.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\regex.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\regex_impl.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\regoff_trie.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\test_helper.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\adfa\adfa.h">
+      <Filter>include\adfa</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cfg\cfg.h">
+      <Filter>include\cfg</Filter>
+    </ClInclude>
+    <ClInclude Include="include\codegen\code.h">
+      <Filter>include\codegen</Filter>
+    </ClInclude>
+    <ClInclude Include="include\codegen\helpers.h">
+      <Filter>include\codegen</Filter>
+    </ClInclude>
+    <ClInclude Include="include\debug\debug.h">
+      <Filter>include\debug</Filter>
+    </ClInclude>
+    <ClInclude Include="include\dfa\closure_leftmost.h">
+      <Filter>include\dfa</Filter>
+    </ClInclude>
+    <ClInclude Include="include\dfa\closure_posix.h">
+      <Filter>include\dfa</Filter>
+    </ClInclude>
+    <ClInclude Include="include\dfa\determinization.h">
+      <Filter>include\dfa</Filter>
+    </ClInclude>
+    <ClInclude Include="include\dfa\dfa.h">
+      <Filter>include\dfa</Filter>
+    </ClInclude>
+    <ClInclude Include="include\dfa\posix_precedence.h">
+      <Filter>include\dfa</Filter>
+    </ClInclude>
+    <ClInclude Include="include\dfa\stacmd.h">
+      <Filter>include\dfa</Filter>
+    </ClInclude>
+    <ClInclude Include="include\dfa\tag_history.h">
+      <Filter>include\dfa</Filter>
+    </ClInclude>
+    <ClInclude Include="include\dfa\tagver_table.h">
+      <Filter>include\dfa</Filter>
+    </ClInclude>
+    <ClInclude Include="include\dfa\tcmd.h">
+      <Filter>include\dfa</Filter>
+    </ClInclude>
+    <ClInclude Include="include\encoding\case.h">
+      <Filter>include\encoding</Filter>
+    </ClInclude>
+    <ClInclude Include="include\encoding\enc.h">
+      <Filter>include\encoding</Filter>
+    </ClInclude>
+    <ClInclude Include="include\encoding\range_suffix.h">
+      <Filter>include\encoding</Filter>
+    </ClInclude>
+    <ClInclude Include="include\encoding\ebcdic\ebcdic.h">
+      <Filter>include\encoding\ebcdic</Filter>
+    </ClInclude>
+    <ClInclude Include="include\encoding\ebcdic\ebcdic_regexp.h">
+      <Filter>include\encoding\ebcdic</Filter>
+    </ClInclude>
+    <ClInclude Include="include\encoding\utf16\utf16.h">
+      <Filter>include\encoding\utf16</Filter>
+    </ClInclude>
+    <ClInclude Include="include\encoding\utf16\utf16_regexp.h">
+      <Filter>include\encoding\utf16</Filter>
+    </ClInclude>
+    <ClInclude Include="include\encoding\utf8\utf8.h">
+      <Filter>include\encoding\utf8</Filter>
+    </ClInclude>
+    <ClInclude Include="include\encoding\utf8\utf8_regexp.h">
+      <Filter>include\encoding\utf8</Filter>
+    </ClInclude>
+    <ClInclude Include="include\msg\location.h">
+      <Filter>include\msg</Filter>
+    </ClInclude>
+    <ClInclude Include="include\msg\msg.h">
+      <Filter>include\msg</Filter>
+    </ClInclude>
+    <ClInclude Include="include\msg\ver_to_vernum.h">
+      <Filter>include\msg</Filter>
+    </ClInclude>
+    <ClInclude Include="include\msg\warn.h">
+      <Filter>include\msg</Filter>
+    </ClInclude>
+    <ClInclude Include="include\util\allocate.h">
+      <Filter>include\util</Filter>
+    </ClInclude>
+    <ClInclude Include="include\util\attribute.h">
+      <Filter>include\util</Filter>
+    </ClInclude>
+    <ClInclude Include="include\util\c99_stdint.h">
+      <Filter>include\util</Filter>
+    </ClInclude>
+    <ClInclude Include="include\util\file_utils.h">
+      <Filter>include\util</Filter>
+    </ClInclude>
+    <ClInclude Include="include\util\fixed_allocator.h">
+      <Filter>include\util</Filter>
+    </ClInclude>
+    <ClInclude Include="include\util\forbid_copy.h">
+      <Filter>include\util</Filter>
+    </ClInclude>
+    <ClInclude Include="include\util\free_list.h">
+      <Filter>include\util</Filter>
+    </ClInclude>
+    <ClInclude Include="include\util\hash32.h">
+      <Filter>include\util</Filter>
+    </ClInclude>
+    <ClInclude Include="include\util\local_increment.h">
+      <Filter>include\util</Filter>
+    </ClInclude>
+    <ClInclude Include="include\util\lookup.h">
+      <Filter>include\util</Filter>
+    </ClInclude>
+    <ClInclude Include="include\util\range.h">
+      <Filter>include\util</Filter>
+    </ClInclude>
+    <ClInclude Include="include\util\s_to_n32_unsafe.h">
+      <Filter>include\util</Filter>
+    </ClInclude>
+    <ClInclude Include="include\util\slab_allocator.h">
+      <Filter>include\util</Filter>
+    </ClInclude>
+    <ClInclude Include="include\util\smart_ptr.h">
+      <Filter>include\util</Filter>
+    </ClInclude>
+    <ClInclude Include="include\util\static_assert.h">
+      <Filter>include\util</Filter>
+    </ClInclude>
+    <ClInclude Include="include\util\string_utils.h">
+      <Filter>include\util</Filter>
+    </ClInclude>
+    <ClInclude Include="include\util\temp_file.h">
+      <Filter>include\util</Filter>
+    </ClInclude>
+    <ClInclude Include="include\util\u32lim.h">
+      <Filter>include\util</Filter>
+    </ClInclude>
+    <ClInclude Include="include\util\uniq_vector.h">
+      <Filter>include\util</Filter>
+    </ClInclude>
+    <ClInclude Include="include\test\range\test.h">
+      <Filter>include\test\range</Filter>
+    </ClInclude>
+    <ClInclude Include="include\test\range\test-impl.h">
+      <Filter>include\test\range</Filter>
+    </ClInclude>
+    <ClInclude Include="include\skeleton\mtag_trie.h">
+      <Filter>include\skeleton</Filter>
+    </ClInclude>
+    <ClInclude Include="include\skeleton\path.h">
+      <Filter>include\skeleton</Filter>
+    </ClInclude>
+    <ClInclude Include="include\skeleton\skeleton.h">
+      <Filter>include\skeleton</Filter>
+    </ClInclude>
+    <ClInclude Include="include\regexp\re.h">
+      <Filter>include\regexp</Filter>
+    </ClInclude>
+    <ClInclude Include="include\regexp\rule.h">
+      <Filter>include\regexp</Filter>
+    </ClInclude>
+    <ClInclude Include="include\regexp\tag.h">
+      <Filter>include\regexp</Filter>
+    </ClInclude>
+    <ClInclude Include="include\parse\ast.h">
+      <Filter>include\parse</Filter>
+    </ClInclude>
+    <ClInclude Include="include\parse\input.h">
+      <Filter>include\parse</Filter>
+    </ClInclude>
+    <ClInclude Include="include\parse\scanner.h">
+      <Filter>include\parse</Filter>
+    </ClInclude>
+    <ClInclude Include="include\parse\unescape.h">
+      <Filter>include\parse</Filter>
+    </ClInclude>
+    <ClInclude Include="include\options\opt.h">
+      <Filter>include\options</Filter>
+    </ClInclude>
+    <ClInclude Include="include\options\symtab.h">
+      <Filter>include\options</Filter>
+    </ClInclude>
+    <ClInclude Include="include\nfa\nfa.h">
+      <Filter>include\nfa</Filter>
+    </ClInclude>
+    <ClInclude Include="include\parse\parse.h">
+      <Filter>include\parse</Filter>
+    </ClInclude>
+    <ClInclude Include="include\parse\parser_.h">
+      <Filter>include\parse</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
